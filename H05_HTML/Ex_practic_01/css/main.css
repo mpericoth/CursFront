@@ -7,12 +7,16 @@ nav a{
     margin-left: 5px;
     margin-right: 5px;
 }
+article{
+    max-width: 768px;
+    margin: 0 auto;
+}
 #titulo h1{
     position:absolute;
     width:100%;
     color: azure;
-    margin-left: 15%;
-    margin-top: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
     background-color: rgba(0, 0, 0, 0.452);
     border-radius: 5px;
     width: fit-content;
