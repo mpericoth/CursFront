@@ -7,7 +7,18 @@ nav a{
     margin-left: 5px;
     margin-right: 5px;
 }
-
+#titulo h1{
+    position:absolute;
+    width:100%;
+    color: azure;
+    margin-left: 15%;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+    
+}
 #img1{
     width: 100%;
     height: auto;
@@ -16,9 +27,15 @@ nav a{
     width: 48%;
     height: auto;
 }
-#img4, #img5, #img6, #img7{
-    width: 48%;
-    height: auto;
+#mand-stands{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+#man-stands div{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
 }
 #img4{
     transform: scale(-1, 1);
