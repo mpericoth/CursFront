@@ -53,3 +53,6 @@ article{
 #img7{
     transform: scale(1, -1);
 }
+#video video{
+    width:100%;
+}
