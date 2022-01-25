@@ -1,0 +1,79 @@
+#ex1 {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(236, 132, 236);
+  width: fit-content;
+}
+.cercle {
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.red-background {
+  background-color: red;
+}
+.yellow_background {
+  background-color: rgb(255, 255, 123);
+}
+.orange_border {
+  border-color: rgb(255, 157, 11);
+}
+#ex2 {
+  border: 15px solid rgb(255, 0, 0);
+  padding: 15px 0px 15px 20px;
+  margin: 20px 50px 20px 50px;
+}
+#ex3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#ex3 p {
+  border-radius: 15%;
+  border: 3px solid black;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.Ex3white {
+  border-color: grey !important;
+}
+.Ex3Purple {
+  border-color: rgb(36, 21, 122) !important;
+  background-color: rgb(49, 42, 153);
+}
+.Ex3Yellow {
+  border-color: rgb(136, 119, 72) !important;
+  background-color: rgb(223, 181, 45);
+}
+.green_underline {
+  text-decoration: underline green;
+}
+.red_underline {
+  text-decoration: underline red;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.under_over_line {
+  text-decoration: underline overline;
+}
+.font_size_20 {
+  font-size: 20px;
+}
+.font_size_35 {
+  font-size: 35px;
+}
