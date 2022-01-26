@@ -77,3 +77,55 @@
 .font_size_35 {
   font-size: 35px;
 }
+
+#ex5 {
+  background-color: bisque;
+}
+#ex5 h3{
+  text-align: center;
+}
+#ex5 div {
+  display: flex;
+  justify-content: space-evenly;
+  border-style: solid;
+  margin: 2px;
+}
+#ex5 div p {
+  width: 200px;
+  text-align: center;
+}
+#soneto1 {
+  background-image: url("../img/img1.jpg");
+  color: white;
+}
+
+#soneto2 {
+  background-color: blanchedalmond;
+  color:coral;
+  justify-content: space-between !important;
+  align-items: flex-end;
+}
+#soneto2 img{
+  width: 25px;
+  height: 25px;
+}
+#soneto3 {
+  background-image: url("../img/img2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:red;
+
+}
+#soneto3 p{
+ background-image: url("../img/eyes.png");
+ background-size: 150px;
+ background-repeat: no-repeat;
+ background-position-x: 50%;
+ background-position-y: 50%;
+
+}
+
+#soneto4 {
+  background-image: url("../img/img3.png");
+  color:rgb(20, 255, 78);
+}
