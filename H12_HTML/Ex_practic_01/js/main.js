@@ -1,17 +1,18 @@
 import * as THREE from "https://threejs.org/build/three.module.js";
+import { Planeta } from './planeta.js';
 
 function main() {
-  let sun, earth, mars, rotationEarth, rotationMars, rotationCamera;
+  let sun, earth, mars, mercury, jupiter, venuse;
 
   const canvas = document.querySelector("#c");
   const renderer = new THREE.WebGLRenderer({ canvas });
 
-  const fov = 50;
+  const fov = 120;
   const aspect = 2; // the canvas default
   const near = 0.1;
-  const far = 55;
+  const far = 100;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  
+
   const scene = new THREE.Scene();
   {
     const loader = new THREE.CubeTextureLoader();
@@ -25,42 +26,26 @@ function main() {
     ]);
     scene.background = texture;
   }
-  //rotationEarth
-  let sphereRadius = 0.1;
-  let geometry = new THREE.SphereGeometry(sphereRadius);
-  rotationEarth = new THREE.Mesh(geometry);
-  scene.add(rotationEarth);
-  //rotationMars
-  sphereRadius = 0.1;
-  geometry = new THREE.SphereGeometry(sphereRadius);
-  rotationMars = new THREE.Mesh(geometry);
-  scene.add(rotationMars);
-  //rotationCamera
-  sphereRadius = 0.1;
-  geometry = new THREE.SphereGeometry(sphereRadius);
-  rotationCamera = new THREE.Mesh(geometry);
-  scene.add(rotationCamera);
-  rotationCamera.add(camera);
-  camera.position.z=25;
+  scene.add(camera);
+  camera.position.y = 20;
+  camera.position.z=15;
+  camera.rotation.x=-0.87;
   // Sun
-  sphereRadius = 1;
-  geometry = new THREE.SphereGeometry(sphereRadius);
+  let sphereRadius = 1;
+  let geometry = new THREE.SphereGeometry(sphereRadius);
   let texture = new THREE.TextureLoader().load("img/sun.jpg");
   let material = new THREE.MeshBasicMaterial({ map: texture });
   sun = new THREE.Mesh(geometry, material);
   scene.add(sun);
-  //Earth
-  texture = new THREE.TextureLoader().load("img/earth.jpg");
-  material = new THREE.MeshBasicMaterial({ map: texture });
-  earth = new THREE.Mesh(geometry, material);
-  rotationEarth.add(earth);
-  earth.position.z = 5;
-  //Mars
-  texture = new THREE.TextureLoader().load("img/mars.jpg");
-  material = new THREE.MeshBasicMaterial({ map: texture });
-  mars = new THREE.Mesh(geometry, material);
-  rotationMars.add(mars);
-  mars.position.z = 8;
+  //planets
+  earth = new Planeta(scene, 1, "earth.jpg", 2, 3);
+  mars = new Planeta(scene, 1.5, "mars.jpg", 2.1, 6);
+  mercury = new Planeta(scene, 2, "mercury.jpg", 1.8, 12);
+  jupiter = new Planeta(scene, 2.5, "jupiter.jpg", 1.2, 20);
+  venuse = new Planeta(scene, 3, "venuse.jpg", 1.4, 25);
+
+  console.log(earth);
+
 
   function resizeRendererToDisplaySize(renderer) {
     const canvas = renderer.domElement;
@@ -82,17 +67,15 @@ function main() {
       camera.aspect = canvas.clientWidth / canvas.clientHeight;
       camera.updateProjectionMatrix();
     }
-    rotationCamera.rotation.y = -time*0.2;
-    sun.rotation.y = time * 0.5;
-    earth.rotation.y = -time * 10;
-    mars.rotation.y = -time * 4;
-    rotationEarth.rotation.y = time * 4;
-    rotationMars.rotation.x = time * 2;
+    earth.axis.rotation.y = time * earth.speed;
+    mars.axis.rotation.y = time * mars.speed;
+    venuse.axis.rotation.y = time * venuse.speed;
+    jupiter.axis.rotation.y = time * jupiter.speed;
+    mercury.axis.rotation.y = time * mercury.speed;
 
     renderer.render(scene, camera);
 
     requestAnimationFrame(render);
-
   }
   requestAnimationFrame(render);
 }
