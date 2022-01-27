@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Imatges</title>
+    <script type="module" src="js/main.js"></script>
   </head>
   <body>
     <header><h1>Header</h1></header>
@@ -33,60 +34,62 @@
           </ul>
         </div>
         <article>
-        <div id="mWidth">
-          <h2>Imagenes modificadas con width</h2>
-          <div>
-            <img id="img2" src="img/galaxy-night-landscape.webp" alt="" />
-            <img id="img3" src="img/galaxy-night-panorama.webp" alt="" />
+          <canvas id="c"></canvas>
+
+          <div id="mWidth">
+            <h2>Imagenes modificadas con width</h2>
+            <div>
+              <img id="img2" src="img/galaxy-night-landscape.webp" alt="" />
+              <img id="img3" src="img/galaxy-night-panorama.webp" alt="" />
+            </div>
           </div>
-        </div>
-      </article>
-      <article>
-        <div id="man-stands">
-          <h2>Imagenes invertidas</h2>
-          <div>
-            <img
-              id="img4"
-              src="img/man-stands-surface-alien-planet-with-neon-circle.webp"
-              alt=""
-            />
-            <img
-              id="img5"
-              src="img/man-stands-surface-alien-planet-with-neon-circle.webp"
-              alt=""
-            />
+        </article>
+        <article>
+          <div id="man-stands">
+            <h2>Imagenes invertidas</h2>
+            <div>
+              <img
+                id="img4"
+                src="img/man-stands-surface-alien-planet-with-neon-circle.webp"
+                alt=""
+              />
+              <img
+                id="img5"
+                src="img/man-stands-surface-alien-planet-with-neon-circle.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                id="img6"
+                src="img/man-stands-surface-alien-planet-with-neon-circle.webp"
+                alt=""
+              />
+              <img
+                id="img7"
+                src="img/man-stands-surface-alien-planet-with-neon-circle.webp"
+                alt=""
+              />
+            </div>
           </div>
-          <div>
+        </article>
+        <article>
+          <div id="varias">
             <img
-              id="img6"
-              src="img/man-stands-surface-alien-planet-with-neon-circle.webp"
+              id="img8"
+              src="img/mesmerizing-view-reflection-mountain-lake-starry-night-sky.webp"
               alt=""
             />
-            <img
-              id="img7"
-              src="img/man-stands-surface-alien-planet-with-neon-circle.webp"
-              alt=""
-            />
+            <img id="img9" src="img/milky-way-sky-forest.webp" alt="" />
+            <img id="img10" src="img/sun-rising-fictional-planet.webp" alt="" />
           </div>
-        </div>
-      </article>
-      <article>
-        <div id="varias">
-          <img
-            id="img8"
-            src="img/mesmerizing-view-reflection-mountain-lake-starry-night-sky.webp"
-            alt=""
-          />
-          <img id="img9" src="img/milky-way-sky-forest.webp" alt="" />
-          <img id="img10" src="img/sun-rising-fictional-planet.webp" alt="" />
-        </div>
-        <div id="video">
-          <video width="320" height="240" controls>
-            <source src="video/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </article>
+          <div id="video">
+            <video width="320" height="240" controls>
+              <source src="video/video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </article>
       </section>
       <aside>
         <form action="search" method="get">
