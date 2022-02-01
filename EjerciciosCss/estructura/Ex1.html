@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #ex1 {
+      }
+      #ex1 div {
+        border: 1px solid red;
+        display: inline-block;
+        width: 45%;
+      }
+      #ex2 {
+        border: 1px solid black;
+      }
+      #ex2h1 {
+        border: 1px solid red;
+        display: inline-block;
+        width: 60%;
+      }
+      #ex2h2 {
+        border: 1px solid red;
+        display: inline-block;
+        width: fit-content;
+      }
+      #ex3 {
+        border: 1px solid rgb(255, 251, 0);
+        display: inline-block;
+        width: 100%;
+      }
+      #ex3h1 {
+        border: 1px solid red;
+        float: left;
+        width: 60%;
+      }
+      #ex3h2 {
+        background-color: slategray;
+        float: right;
+        width: 17%;
+      }
+      #ex4 {
+          display: flex;
+          justify-content: space-between;
+          width: 80%;
+
+      }
+      #ex4h1 {
+      }
+      #ex4h2 {
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      Exercici 1) dos-columnes: mateix ample amb inline-block*/
+    -->
+    <div id="ex1">
+      <div>Contenido de la primera columna</div>
+      <div>Contenido de la segunda columna</div>
+    </div>
+    <!--
+        Exercici 2) dos-columnes: diferent ample amb inline-block
+    -->
+    <div id="ex2">
+      <div id="ex2h1">Contenido principal</div>
+      <div id="ex2h2">Contenido lateral</div>
+    </div>
+    <!-- 
+        Exercici 3) dos-columnes diferent ample: amb float 
+    -->
+    <div id="ex3">
+      <div id="ex3h1">
+        Aqui ira el contenido principal a lado del contenido o menu lateral
+      </div>
+      <div id="ex3h2">Aqui ira el contenido alineado a la izquierda</div>
+    </div>
+    <!-- 
+       Exercici 4) dos-columnes: amb flex 
+    -->
+    
+    <div id="ex4">
+      <div id="ex4h1">
+        Contenido de la primera columna
+      </div>
+      <div id="ex4h2">Contenido de la segunda columna</div>
+    </div>
+  </body>
+</html>
