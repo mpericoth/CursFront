@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #encabezado {
+        background-color: yellow;
+        height: 150px;
+        text-align: center;
+        line-height: 150px;
+        font-size: 3em;
+      }
+      #col1 {
+        width: 20%;
+        height: 400px;
+        background-color: rgb(178, 148, 216);
+        float: left;
+      }
+      #col2 {
+        background-color: rgb(184, 140, 73);
+        display: inline-block;
+        height: 400px;
+        width: 60%;
+      }
+      #col3 {
+        background-color: rgb(204, 58, 32);
+        float: right;
+        width: 20%;
+        height: 400px;
+      }
+      #pie {
+        background-color: rgb(197, 74, 160);
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+      }
+      @media screen and (max-width: 600px) {
+      #encabezado{
+        font-size: 1em;
+      }
+       #cuerpo{
+        display: flex;
+        flex-direction: column;        
+
+       }
+       #col1, #col2, #col3{
+         width: 100%;
+       }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="encabezado">Encabezado de pagina</div>
+    <div id="cuerpo">
+      <div id="col1">Menu (Columna 1)</div>
+      <div id="col2">Contenido (Columna 2)</div>
+      <div id="col3">Columna lateral (Columna 3)</div>
+    </div>
+    <div id="pie">pie de pagina</div>
+  </body>
+</html>
