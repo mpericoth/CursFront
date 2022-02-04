@@ -62,7 +62,7 @@ main {
   width: 100%;
 }
 article {
-  width: 75%;
+  width: 80%;
   border: 3px solid black;
   display: flex;
   flex-direction: row;
@@ -71,22 +71,32 @@ article {
   align-content: center;
   gap: 5px;
 }
+article::after {
+  content: "";
+  flex: auto;
+}
 .producto {
-  width: 180px;
+  width: 308px;
   display: flex;
   flex-direction: column;
 }
 .producto h2 {
   margin: 0px;
+  font-size: 12px;
 }
-.producto p {
+.producto > p {
   margin: 0px;
+  display: none;
 }
 .producto img {
-  width: 180px;
+  max-width: 180px;
+  height: 200px;
+  object-fit: contain;
 }
 
 .precio {
+  margin: 0px;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -101,11 +111,16 @@ aside li {
   list-style-type: none;
   text-align: center;
 }
+aside li .fa{
+  color:rgb(183, 212, 52)
+}
 footer {
+  flex-wrap: wrap;
   text-align: center;
   border: 8px solid black;
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 .column-footer:first-child ul {
   display: flex;
@@ -136,8 +151,9 @@ footer {
     border: 3px solid rgb(255, 247, 52);
     width: 100%;
   }
-} /*mobil*/
-@media only screen and (max-width: 500px) {
+} 
+/*mobil*/
+@media only screen and (max-width:622px) {
   nav {
     border: 3px solid black;
     background-color: rgb(238, 13, 130);
