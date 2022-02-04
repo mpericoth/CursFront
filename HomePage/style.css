@@ -52,6 +52,7 @@ nav ul div i {
   margin: 0;
   width: 100%;
   text-align: center;
+  color: white;
 }
 
 main {
@@ -103,8 +104,25 @@ aside li {
 footer {
   text-align: center;
   border: 8px solid black;
+  display: flex;
+  flex-direction: row;
 }
-
+.column-footer:first-child ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  gap: 3px;
+}
+.column-footer:first-child ul li {
+  background-color: darkgreen;
+  margin: 0;
+}
+.column-footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
 /*Tauleta*/
 @media only screen and (max-width: 800px) {
   main {
