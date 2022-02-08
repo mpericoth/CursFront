@@ -32,6 +32,12 @@ nav ul div:first-child {
 nav ul div:last-child {
   margin-right: 25px;
 }
+nav ul div li:hover {
+  background-color: rgb(12, 51, 83);
+}
+nav ul div i:hover {
+  background-color: rgb(12, 51, 83);
+}
 nav ul div i {
   list-style-type: none;
   margin: 3px;
@@ -83,6 +89,9 @@ article::after {
 .producto h2 {
   margin: 0px;
   font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .producto > p {
   margin: 0px;
@@ -93,10 +102,11 @@ article::after {
   height: 200px;
   object-fit: contain;
 }
-
+.producto button:hover {
+  background-color: rgb(13, 54, 238);
+}
 .precio {
   margin: 0px;
-  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -105,14 +115,17 @@ aside {
   border: 3px solid black;
   width: 20%;
 }
-aside li {
+aside ul li {
   margin: 2px;
   width: 80%;
   list-style-type: none;
   text-align: center;
 }
-aside li .fa{
-  color:rgb(183, 212, 52)
+
+aside ul input[type="number"] {
+  border: 1px solid black !important;
+  margin: 1px 0px 1px 0px;
+  width: 80%;
 }
 footer {
   flex-wrap: wrap;
@@ -129,9 +142,9 @@ footer {
   justify-content: center;
   gap: 3px;
 }
-.column-footer:first-child ul li {
-  background-color: darkgreen;
+.column-footer:first-child ul li i {
   margin: 0;
+  font-size: 30px;
 }
 .column-footer ul {
   display: flex;
@@ -139,7 +152,7 @@ footer {
   list-style-type: none;
 }
 /*Tauleta*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   main {
     border: 8px solid rgb(255, 247, 52);
 
@@ -151,9 +164,9 @@ footer {
     border: 3px solid rgb(255, 247, 52);
     width: 100%;
   }
-} 
+}
 /*mobil*/
-@media only screen and (max-width:622px) {
+@media only screen and (max-width: 622px) {
   nav {
     border: 3px solid black;
     background-color: rgb(238, 13, 130);
