@@ -40,7 +40,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse me-5" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="#">Features</a>
@@ -58,8 +58,8 @@
       </div>
     </nav>
 
-    <div class="row d-flex justify-content-evenly">
-      <div class="col-4">
+    <div id="capsalera" class="row d-flex justify-content-evenly">
+      <div class="col-8 col-md-4">
         <div class="row">
           <h1>A Simple Bookmark Manager</h1>
           <p>
@@ -80,9 +80,149 @@
           </div>
         </div>
       </div>
-      <div class="col-4"><img class="img-fluid" src="img/img.png" alt="imagen"></div>
+      <div class="col-8 col-md-4 d-flex align-items-center">
+        <img class="img-fluid" src="img/img.png" alt="imagen" />
+      </div>
     </div>
-
+    <div id="features" class="row d-flex justify-content-evenly">
+      <div class="col-12">
+        <h2 class="text-center">Features</h2>
+        <p class="text-center col-5 mx-auto">
+          Our aim is to make it quick nad easy for you to acces your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+      <div id="info-tabs" class="col-12">
+        <nav class="d-flex justify-content-evenly mb-5">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              Simple Bookmarking
+            </button>
+            <button
+              class="nav-link"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+            >
+              Speedy Searching
+            </button>
+            <button
+              class="nav-link"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              Easy Sharing
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            <div class="row d-flex justify-content-evenly">
+              <div class="col-8 col-md-4">
+                <img class="img-fluid" src="img/img.png" alt="imagen" />
+              </div>
+              <div class="col-8 col-md-4">
+                <div class="row">
+                  <h1>Bookmark in one click</h1>
+                  <p>
+                    Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favourite sites.
+                  </p>
+                  <div class="row">
+                    <div class="col-6">
+                      <button type="button" class="btn btn-primary">
+                        More info
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+          >
+          <div class="row d-flex justify-content-evenly">
+            <div class="col-8 col-md-4">
+              <img class="img-fluid" src="img/img.png" alt="imagen" />
+            </div>
+            <div class="col-8 col-md-4 ">
+              <div class="row">
+                <h1>Bookmark in one click</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, obcaecati eos. Vitae voluptate perspiciatis possimus, velit quod quam quisquam corrupti ab iusto? Molestias sed dolorum esse ipsum minus velit autem.
+                </p>
+                <div class="row">
+                  <div class="col-6">
+                    <button type="button" class="btn btn-primary">
+                      More info
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+          >
+          <div class="row d-flex justify-content-evenly">
+            <div class="col-8 col-md-4">
+              <div class="row">
+                <h1>Bookmark in one click</h1>
+                <p>
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <div class="row">
+                  <div class="col-6">
+                    <button type="button" class="btn btn-primary">
+                      More info
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-md-4">
+              <img class="img-fluid" src="img/img.png" alt="imagen" />
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
