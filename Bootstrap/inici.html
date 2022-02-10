@@ -58,7 +58,7 @@
       </div>
     </nav>
 
-    <div id="capsalera" class="row d-flex justify-content-evenly">
+    <header id="capsalera" class="row d-flex justify-content-evenly">
       <div class="col-8 col-md-4">
         <div class="row">
           <h1>A Simple Bookmark Manager</h1>
@@ -83,146 +83,407 @@
       <div class="col-8 col-md-4 d-flex align-items-center">
         <img class="img-fluid" src="img/img.png" alt="imagen" />
       </div>
-    </div>
-    <div id="features" class="row d-flex justify-content-evenly">
-      <div class="col-12">
-        <h2 class="text-center">Features</h2>
-        <p class="text-center col-5 mx-auto">
-          Our aim is to make it quick nad easy for you to acces your favourite
-          websites. Your bookmarks sync between your devices so you can access
-          them on the go.
-        </p>
-      </div>
-      <div id="info-tabs" class="col-12">
-        <nav class="d-flex justify-content-evenly mb-5">
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button
-              class="nav-link active"
-              id="nav-home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-home"
-              type="button"
-              role="tab"
-              aria-controls="nav-home"
-              aria-selected="true"
+    </header>
+    <main>
+      <div id="features" class="row d-flex justify-content-evenly">
+        <div class="col-12">
+          <h2 class="text-center">Features</h2>
+          <p class="text-center col-5 mx-auto">
+            Our aim is to make it quick nad easy for you to acces your favourite
+            websites. Your bookmarks sync between your devices so you can access
+            them on the go.
+          </p>
+        </div>
+        <div id="info-tabs" class="col-12">
+          <nav class="d-flex justify-content-evenly mb-5">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button
+                class="nav-link active"
+                id="nav-home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-home"
+                type="button"
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+              >
+                Simple Bookmarking
+              </button>
+              <button
+                class="nav-link"
+                id="nav-profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-profile"
+                type="button"
+                role="tab"
+                aria-controls="nav-profile"
+                aria-selected="false"
+              >
+                Speedy Searching
+              </button>
+              <button
+                class="nav-link"
+                id="nav-contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-contact"
+                type="button"
+                role="tab"
+                aria-controls="nav-contact"
+                aria-selected="false"
+              >
+                Easy Sharing
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="nav-home"
+              role="tabpanel"
+              aria-labelledby="nav-home-tab"
             >
-              Simple Bookmarking
-            </button>
-            <button
-              class="nav-link"
-              id="nav-profile-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-profile"
-              type="button"
-              role="tab"
-              aria-controls="nav-profile"
-              aria-selected="false"
-            >
-              Speedy Searching
-            </button>
-            <button
-              class="nav-link"
-              id="nav-contact-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-contact"
-              type="button"
-              role="tab"
-              aria-controls="nav-contact"
-              aria-selected="false"
-            >
-              Easy Sharing
-            </button>
-          </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="nav-home"
-            role="tabpanel"
-            aria-labelledby="nav-home-tab"
-          >
-            <div class="row d-flex justify-content-evenly">
-              <div class="col-8 col-md-4">
-                <img class="img-fluid" src="img/img.png" alt="imagen" />
-              </div>
-              <div class="col-8 col-md-4">
-                <div class="row">
-                  <h1>Bookmark in one click</h1>
-                  <p>
-                    Organize your bookmarks however you like. Our simple
-                    drag-and-drop interface gives you complete control over how
-                    you manage your favourite sites.
-                  </p>
+              <div class="row d-flex justify-content-evenly">
+                <div class="col-8 col-md-4">
+                  <img class="img-fluid" src="img/img.png" alt="imagen" />
+                </div>
+                <div class="col-8 col-md-4">
                   <div class="row">
-                    <div class="col-6">
-                      <button type="button" class="btn btn-primary">
-                        More info
-                      </button>
+                    <h1>Bookmark in one click</h1>
+                    <p>
+                      Organize your bookmarks however you like. Our simple
+                      drag-and-drop interface gives you complete control over
+                      how you manage your favourite sites.
+                    </p>
+                    <div class="row">
+                      <div class="col-6">
+                        <button type="button" class="btn btn-primary">
+                          More info
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="nav-profile"
-            role="tabpanel"
-            aria-labelledby="nav-profile-tab"
-          >
-          <div class="row d-flex justify-content-evenly">
-            <div class="col-8 col-md-4">
-              <img class="img-fluid" src="img/img.png" alt="imagen" />
-            </div>
-            <div class="col-8 col-md-4 ">
-              <div class="row">
-                <h1>Bookmark in one click</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, obcaecati eos. Vitae voluptate perspiciatis possimus, velit quod quam quisquam corrupti ab iusto? Molestias sed dolorum esse ipsum minus velit autem.
-                </p>
-                <div class="row">
-                  <div class="col-6">
-                    <button type="button" class="btn btn-primary">
-                      More info
-                    </button>
+            <div
+              class="tab-pane fade"
+              id="nav-profile"
+              role="tabpanel"
+              aria-labelledby="nav-profile-tab"
+            >
+              <div class="row d-flex justify-content-evenly">
+                <div class="col-8 col-md-4">
+                  <img class="img-fluid" src="img/img.png" alt="imagen" />
+                </div>
+                <div class="col-8 col-md-4">
+                  <div class="row">
+                    <h1>Bookmark in one click</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Non, obcaecati eos. Vitae voluptate perspiciatis possimus,
+                      velit quod quam quisquam corrupti ab iusto? Molestias sed
+                      dolorum esse ipsum minus velit autem.
+                    </p>
+                    <div class="row">
+                      <div class="col-6">
+                        <button type="button" class="btn btn-primary">
+                          More info
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="nav-contact"
-            role="tabpanel"
-            aria-labelledby="nav-contact-tab"
-          >
-          <div class="row d-flex justify-content-evenly">
-            <div class="col-8 col-md-4">
-              <div class="row">
-                <h1>Bookmark in one click</h1>
-                <p>
-                  Organize your bookmarks however you like. Our simple
-                  drag-and-drop interface gives you complete control over how
-                  you manage your favourite sites.
-                </p>
-                <div class="row">
-                  <div class="col-6">
-                    <button type="button" class="btn btn-primary">
-                      More info
-                    </button>
+            <div
+              class="tab-pane fade"
+              id="nav-contact"
+              role="tabpanel"
+              aria-labelledby="nav-contact-tab"
+            >
+              <div class="row d-flex justify-content-evenly">
+                <div class="col-8 col-md-4">
+                  <div class="row">
+                    <h1>Bookmark in one click</h1>
+                    <p>
+                      Organize your bookmarks however you like. Our simple
+                      drag-and-drop interface gives you complete control over
+                      how you manage your favourite sites.
+                    </p>
+                    <div class="row">
+                      <div class="col-6">
+                        <button type="button" class="btn btn-primary">
+                          More info
+                        </button>
+                      </div>
+                    </div>
                   </div>
+                </div>
+                <div class="col-8 col-md-4">
+                  <img class="img-fluid" src="img/img.png" alt="imagen" />
                 </div>
               </div>
             </div>
-            <div class="col-8 col-md-4">
-              <img class="img-fluid" src="img/img.png" alt="imagen" />
-            </div>
-          </div>
           </div>
         </div>
       </div>
-    </div>
+      <div id="descargas">
+        <div class="col-12">
+          <h2 class="text-center">Download the extension</h2>
+          <p class="text-center col-5 mx-auto">
+            Our aim is to make it quick nad easy for you to acces your favourite
+            websites. Your bookmarks sync between your devices so you can access
+            them on the go.
+          </p>
+        </div>
+        <div class="row d-flex justify-content-center min-vh-100">
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center align-self-start"
+          >
+            <div class="card" style="width: 12rem">
+              <img
+                src="img/icons/logo-chrome.svg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chrome</h5>
+                <p class="card-text">Minimum version 12.5</p>
+                <a href="#" class="btn btn-primary"
+                  >Add and install extension</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center align-self-center"
+          >
+            <div class="card align-bottom" style="width: 12rem">
+              <img
+                src="img/icons/logo-firefox.svg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Firefox</h5>
+                <p class="card-text">Minimum version 55</p>
+                <a href="#" class="btn btn-primary"
+                  >Add and install extension</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center align-self-end"
+          >
+            <div class="card" style="width: 12rem">
+              <img
+                src="img/icons/logo-opera.svg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Opera</h5>
+                <p class="card-text">Minimum version 35¡4</p>
+                <a href="#" class="btn btn-primary"
+                  >Add and install extension</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="FAQS" class="row d-flex justify-content-centers">
+        <div class="col-12">
+          <h2 class="text-center">FAQS</h2>
+          <p class="text-center col-5 mx-auto">
+            Our aim is to make it quick nad easy for you to acces your favourite
+            websites. Your bookmarks sync between your devices so you can access
+            them on the go.
+          </p>
+        </div>
+        <div class="col-12 col-md-8 mx-auto text-center">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-info">More info</button>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-info mt-3">
+      <div class="row">
+        <div class="col-12 col-md-8 mx-auto text-center">
+          <p>Lorem ipsum dolor sit.</p>
+          <h2 class="col-8 mx-auto">Stay up-to-date with what we're doing</h2>
+          <div class="mb-3 col-10 mx-auto">
+            <form
+              id="form"
+              action="#form"
+              class="row needs-validation was-validated"
+              novalidate
+            >
+              <div class="col-8">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Introduce tu email"
+                  id="email"
+                  required
+                />
+                <div class="invalid-feedback">Email incorretcto</div>
+              </div>
+
+              <div class="col-4">
+                <button class="btn btn-danger" type="submit">Contact Us</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="subFooter" class="bg-primary row pt-2">
+        <div class="col-6">
+          <div class="row">
+            <a class="text-white col-6" href="#">
+              <img
+                src="img/icons/User_icon_2.svg"
+                alt=""
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              BOOKMARK
+            </a>
+            <ul class="col-6 d-flex gap-4" style="list-style-type: none">
+              <li class="">
+                <a class="text-white" href="#">Features</a>
+              </li>
+              <li class=" ">
+                <a class="text-white" href="#">Pricing</a>
+              </li>
+              <li class=" ">
+                <a class="text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 text-end">
+          <a class="text-white" href="#">
+            <img
+              src="img/icons/User_icon_2.svg"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <a class="text-white" href="#">
+            <img
+              src="img/icons/User_icon_2.svg"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
