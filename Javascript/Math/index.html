@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        width: fit-content;
+        color:white;
+        list-style: none;
+      }
+      .red {
+        background-color: rgb(94, 11, 11);
+        color: rgb(94, 11, 11);
+      }
+      .blue {
+        background-color: rgb(24, 24, 116);
+        color: rgb(24, 24, 116);
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="lista"></ul>
+    <script>
+      //Ex1
+      let x = 5.4;
+      let roundUp = Math.ceil(x);
+      let roundDown = Math.floor(x);
+      let sqrt = Math.sqrt(x);
+      let rand = Math.floor(Math.random() * x) + 1;
+      console.log(`arrodoneix cap adalt  ${roundUp}`);
+      console.log(`arrodoneix cap abaix down ${roundDown}`);
+      console.log(`arrel cuadrada ${sqrt}`);
+      console.log(`aleatori dins d’un rang x: ${rand}`);
+      //Ex2
+      let min = +prompt("Ingresa el minimo: ");
+      let max = +prompt("Ingresa el maximo: ");
+      let numeros = +prompt("Numeros a generar: ");
+      for (let i = min; i <= max; i++) {
+        let elementli = document.createElement("li");
+        let elementa = document.createElement("p");
+        elementli.id = "item" + i;
+        if (i % 2 == 0) {
+          elementli.classList.add("red");
+        } else {
+          elementli.classList.add("blue");
+        }
+        elementa.textContent = i + ": ";
+        elementa.appendChild(elementli);
+        document.getElementById("lista").appendChild(elementa);
+      }
+      for (let i = 0; i < numeros; i++) {
+        let randRange = Math.floor(Math.random() * (max - min + 1)) + min;
+        console.log(`Aleatorio entre ${min} y ${max}: ${randRange}`);
+        document.getElementById("item" + randRange).innerHTML += "*";
+      }
+    </script>
+  </body>
+</html>

@@ -59,7 +59,7 @@ setTimeout(() => {
       let peso = window.prompt("Introduce tu peso");
       let altura = window.prompt("Introduce tu altura");
       document.getElementById("Ej6").innerHTML =
-        "El imc es: " + peso / (altura * altura);
+        "El imc es: " + (peso / Math.pow(altura, 2)).toFixed(2);
 
       break;
     case 7:
@@ -68,13 +68,3 @@ setTimeout(() => {
       break;
   }
 }, 500);
-
-/*
-let d = new Date();
-document.getElementById("demo").innerHTML = d;
-console.log(d);
-d = new Date();
-setTimeout(() => {
-  window.alert(d);
-}, 1000);
-*/
