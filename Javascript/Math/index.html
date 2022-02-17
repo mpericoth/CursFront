@@ -13,11 +13,9 @@
       }
       .red {
         background-color: rgb(94, 11, 11);
-        color: rgb(94, 11, 11);
       }
       .blue {
         background-color: rgb(24, 24, 116);
-        color: rgb(24, 24, 116);
       }
     </style>
   </head>
@@ -54,7 +52,10 @@
       for (let i = 0; i < numeros; i++) {
         let randRange = Math.floor(Math.random() * (max - min + 1)) + min;
         console.log(`Aleatorio entre ${min} y ${max}: ${randRange}`);
-        document.getElementById("item" + randRange).innerHTML += "*";
+        document.getElementById("item" + randRange).innerHTML += "&nbsp";
+      }
+      for (let i = min; i <= max; i++){
+        console.log(i +": " +document.getElementById("item"+i).innerHTML.length/6);
       }
     </script>
   </body>

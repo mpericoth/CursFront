@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+                let fechaActual = new Date().getTime();
+                let diaActual = new Date().getDay();
+                let mesActual = new Date().getMonth();
+                let anoActual = new Date().getFullYear();
+        
+                let nacimiento = prompt("dd-mm-aaaa").split("-");
+                let diaCumpl = nacimiento[0];
+                let mesCumpl = nacimiento[1] - 1;
+                let anoCumpl = nacimiento[2];
+                let fechaCumpleanos = new Date(anoActual, mesCumpl, diaCumpl).getTime();
+        
+                if (fechaActual < fechaCumpleanos) {
+                    console.log(fechaCumpleanos - fechaActual);
+                      console.log((fechaCumpleanos-fechaActual)/(1000*60*60*24));
+                } else {
+                    fechaCumpleanos = new Date(anoActual + 1, mesCumpl, diaCumpl).getTime()
+                    console.log(fechaCumpleanos - fechaActual);
+                     console.log((fechaCumpleanos-fechaActual)/(1000*60*60*24));
+        
+                }
+        */      
+       
+        let dataCatala = new Date();
+        const opcions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        console.log(dataCatala.toLocaleDateString("ca-Ca", opcions));
+    </script>
+</body>
+
+</html>
