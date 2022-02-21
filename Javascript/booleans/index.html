@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script>
+            //Ex1
+            let esCorrecte=true;
+            if(esCorrecte)
+            {
+                console.log("Ej 1 entra en if " +esCorrecte+ " Es correcte");
+            }else{
+                console.log("Ej 1 entra en else " +esCorrecte+ " No es correcte");
+            }
+            //Ex2 a
+            let bool1=true;
+            let bool2=true;
+            if(bool1 && bool2){
+                console.log("Ej2 a entra en if &&");
+            } else{
+                console.log("Ej2 a entra en else  &&"); 
+            }
+             //Ex2 b
+            bool1=true;
+            bool2=true;
+            if((bool1 || bool2) && !(bool1 && bool2)){
+                console.log("Ej2 b entra en if"+ bool1 +" "+ bool2);
+            }else{
+                console.log("Ej2 b entra en else"+ bool1 +" "+ bool2);
+            }
+            //Ej3
+            console.log("a " + 2 < 12);
+            console.log("b " + 2 < "12");
+            console.log("c " + "2" < "12");
+            console.log("d " + !("2" < "12"));
+            console.log("e " + ((2 < "12") && (2 == "2")));
+            console.log("f " + (("2" < "12") || (2 < 12)));
+            console.log("g " + (("2" < "12") && (2 < 12)));
+    </script>
+</body>
+</html>

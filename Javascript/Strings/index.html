@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Ej1
+      let producto = "    Monitor 20 Pulgadas    ";
+      console.log(producto.trim() + ".");
+      //Ej2 a
+      producto = " Monitor 20 Pulgadas";
+      producto = producto.replace(" Pulgadas", '"');
+      producto = producto.replace("20", "40");
+      console.log(producto);
+      //Ej2 b
+      pulgadadas= producto.slice(8, 10);
+      console.log("pulgadadas");
+      //Ej2 c
+      producto = "Monitor 20 Pulgadas";
+      partFrase= producto.slice(2, 10);
+      console.log(partFrase);
+      //Ej2 d
+      let nombre="Marc";
+      console.log(nombre[0]);
+      //Ej3
+      let actividad="Estoy aprendiendo Javascript Moderno";
+      let splitAct=actividad.split(" ");
+      let hobbies = 'Leer, caminar, escuchar musica, escribir, aprender a programar';
+      let splitHo= hobbies.split(",");
+      console.log(splitAct, splitHo);
+      console.log(splitAct);
+      //Ej 4
+      producto= 'Monitor 24 pulgadas';
+      console.log(producto.toLocaleUpperCase());
+      //Ej5
+      let input="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit";//prompt("Introduce un texto:");
+      let paraula="quisquam";//prompt("Introduce una palabra a buscar:");
+      let posParaula= input.toLowerCase().indexOf(paraula.toLowerCase())
+      if(posParaula !=-1)
+    {
+        console.log(`"${paraula}" esta en la posicion ${posParaula} de: "${input}"`);
+        console.log("La longitud de la frase es: " + input.length);
+    }else{
+        console.log("No se ha encontrado");
+    }
+      
+    </script>
+  </body>
+</html>
