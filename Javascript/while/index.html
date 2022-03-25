@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Ej1
+        /*     var fact = prompt("Ingresa un numero: ");
+             var num = 5;
+             while (num > 1) {
+                 fact *= num;
+                 num--;
+             }  
+        //Ej2
+        let ran = Math.floor(Math.random() * 10) + 1;
+        let intentos = 0;
+        let num;
+        do {
+            num = prompt("1. Adivina:");
+            intentos++;
+        } while (num != ran);
+        window.alert("has acertado al intento: " + intentos);
+        //Ej2
+        ran = Math.floor(Math.random() * 10) + 1;
+        intentos = 0;
+        do {
+            let num = prompt("2. Adivina:");
+            intentos++;
+            if (num == ran) {
+                window.alert("has acertado al intento: " + intentos);
+                break;
+            }
+            if (intentos >= 5) {
+                window.alert("demasiados intentos, el numero era: " + ran);
+
+                break;
+            }
+        } while (num != ran);
+        //Ej3
+
+        let palabra;
+        let count=0;
+         do {
+           palabra= prompt("Introduce una palabra");
+           count++;
+            
+        } while (palabra!="fi");
+        console.log(count);*/
+        //Ej4
+        let num = prompt("Numero: ");
+        let i = 2;
+        let primo = true;
+
+
+        if (num == 1) {
+            primo= false;
+        }
+        else if (num == 2) {
+            primo= true;
+        } else {
+         do {
+                 if (num % i == 0) {
+                    primo= false;
+                    break;
+                }
+                i++;
+            } while (i<num);
+        }
+
+        if(primo){
+            console.log("es un numero primo");
+        }else{
+            console.log("No es un numero primo");
+
+        }
+    </script>
+</body>
+
+</html>

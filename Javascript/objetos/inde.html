@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Ej1
+        function Ej1(a, b) {
+            let arr = [];
+            let min= Math.min(a,b);
+            let max= Math.max(a,b);
+            for (let i = min+1; i <max; i++) {
+                arr.push(i);
+            }
+            return arr;
+        }
+        console.log(Ej1(30, 50));
+        //Ej2
+        function Ej2(arr) {
+            let arr2;
+            for (let i = 0; i < arr.length; i++) {
+                arr.push(arr[i].length);
+            }
+        }
+        //Ej3
+        const carrito = [{
+            nombre: 'Monitor 20 Pulgadas',
+            precio: 500
+        },
+        {
+            nombre: 'Televisión 50 Pulgadas',
+            precio: 700
+        },
+        {
+            nombre: 'Tablet',
+            precio: 300
+        },
+        {
+            nombre: 'Audifonos',
+            precio: 200
+        },
+        {
+            nombre: 'Teclado',
+            precio: 50
+        },
+        {
+            nombre: 'Celular',
+            precio: 500
+        },
+        {
+            nombre: 'Bocinas',
+            precio: 300
+        },
+        {
+            nombre: 'Laptop',
+            precio: 0
+        },];
+
+        function mesDe300() {
+            carrito.forEach(element => {
+                if (element.precio >= 300) {
+                    console.table(element);
+                }
+            });
+        }
+        mesDe300();
+        function preuTotal() {
+            let total = 0;
+
+            carrito.forEach(element => {
+                total += element.precio;
+            });
+            return total;
+        }
+        console.log(preuTotal());
+        function a() {
+            let carrito400 = carrito.slice();
+            for (var i = 0; i < carrito400.length; i++) {
+                if (carrito400[i].precio <= 400) {
+                    carrito400.splice(i, 1);
+                    i--;
+                }
+            }
+            return carrito400;
+        }
+        console.table(a());
+        function b() {
+            let carrito400 = carrito.slice();
+            for (var i = 0; i < carrito400.length; i++) {
+                if (carrito400[i].nombre != "Celular") {
+                    carrito400.splice(i, 1);
+                    i--;
+                }
+            }
+            return carrito400;
+        }
+        console.table(b());
+        function c() {
+            let carrito400 = carrito.slice();
+            for (var i = 0; i < carrito400.length; i++) {
+                if (carrito400[i].nombre == "Laptop") {
+                    carrito400.splice(i, 1);
+                    i--;
+                }
+            }
+            return carrito400;
+        }
+        console.table(c());
+        function d() {
+
+            for (const element of carrito) {
+                if (element.precio == 0) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        console.log(d());
+        //Ej4
+        let arrayNum=[0,7,2,6,5,4,2,3,8,9,7,8];
+        function ordenar(arrayNum){
+               
+                return arrayNum.sort((a,b) => a-b);
+        }
+        console.log(arrayNum);
+        console.log(ordenar(arrayNum));
+        //Ej5
+        let arrayNoms=["Andres","Sandra","Pau","Maria","Carlos"];
+        function mesLlarg(arrayNoms){
+            let mesLlarg=0;    
+            for(let i=1;i<arrayNoms.length;i++){
+                    if(arrayNoms[i].length>arrayNoms[mesLlarg].length)
+                    {
+                        mesLlarg=i;
+                    }
+                }   
+                return mesLlarg;
+        }
+
+        console.log(mesLlarg(arrayNoms));
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      //Ej1
+      function Saludar(nom, cognom, sexe) {
+        let benvinguda = "";
+        if (sexe == "dona") {
+          benvinguda = "Benvinguda ";
+        } else if (sexe == "home") {
+          benvinguda = "Benvingut ";
+        } else {
+          benvinguda = "Hola ";
+        }
+        console.log(benvinguda + nom + " " + cognom);
+      }
+      Saludar("Maria", "Perez", "dona");
+      Saludar("Jose", "Lopez", "home");
+      Saludar("Laura", "Blanco");
+      //Ej 2
+      function EdatGos(fecha) {
+        let fechaPerro = new Date(fecha).getFullYear();
+        let fechaActual = new Date().getFullYear();
+        return fechaActual - fechaPerro;
+      }
+      console.log("Edad: " + EdatGos("01, 22, 2000"));
+      console.log("Edad: " + EdatGos("03, 12, 2020"));
+      //Ej3
+      function menor(a, b) {
+        return Math.min(a, b);
+      }
+      console.log(menor(2, 5));
+      console.log(menor(7, 1));
+      //Ej 4
+      function contarCaracteres(frase1, frase2) {
+        return frase1.length + frase2.length;
+      }
+      console.log(contarCaracteres("Hola mundo", "Adios mundo"));
+
+      //Ej5
+      sumar();
+      function sumar() {
+        console.log(2 + 2);
+      }
+      //sumar2();
+      //const sumar2 = function () {
+      //    console.log(3 + 3);
+      //}
+      //Ej 6
+      function isEmail(email) {
+        return email.includes("@");
+      }
+      console.log(isEmail("correogmail.com"));
+      console.log(isEmail("correo@gmail.com"));
+      //Ej 7
+      let string =
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur";
+      function imprPrimeraMeitat(string) {
+        console.log(string.slice(0, string.length / 2));
+      }
+      imprPrimeraMeitat(string);
+      function darrerCaracter(string) {
+        console.log(string[string.length - 1]);
+      }
+      darrerCaracter(string);
+      function stringInvers(string) {
+        console.log(string.split("").reverse().join(""));
+      }
+      stringInvers(string);
+      function caracterSeparatPerGuio(string) {
+        console.log(string.split("").join("-"));
+        console.log(string.replace(/.{1,1}(?=(.{1})+$)/g, "$&-"));
+      }
+      caracterSeparatPerGuio(string);
+      function vocalsSenseAccents(string) {
+        console.log(string.match(/[aeiou]/gi).join(""));
+      }
+      vocalsSenseAccents(string);
+      //Ej8
+      let dni = "47834211f";
+      function validarDNI(dni) {
+        let modulo = 0;
+        for (let i = 0; i < dni.length - 1; i++) {
+          modulo += dni[i];
+        }
+        modulo = modulo % 23;
+        let lletres = "TRWAGMYFPDXBNJZSQVHLCKE";
+        if (dni[dni.length - 1].toUpperCase() == lletres[modulo]) {
+          return true;
+        } else return false;
+      }
+      console.log(validarDNI(dni));
+      //Ej9
+      let pass = "Aa5@AA";
+
+      function passwordSegura(pass) {
+        let long = false,
+          maj = false,
+          min = false,
+          num = false,
+          caraEsp = false;
+        if (pass.length >= 8) {
+          long = true;
+        }
+        if (pass.match(/[A-Z]/g)) {
+          maj = true;
+        }
+        if (pass.match(/[a-z]/g)) {
+          min = true;
+        }
+        if (pass.match(/[0-9]/g)) {
+          num = true;
+        }
+        if (pass.match(/\W+/)) {
+          caraEsp = true;
+        }
+        return {
+          longitud: long,
+          mayuscula: maj,
+          minuscula: min,
+          numero: num,
+          caracterEspecial: caraEsp,
+        };
+      }
+      console.log(pass);
+      console.log(passwordSegura(pass));
+      //Ej10
+      function captcha() {
+        let captcha = "";
+        let captchaChars = "1234567890abcdefghijklmnopqrst";
+        for (let i = 0; i < 5; i++) {
+          captcha =
+            captcha +
+            captchaChars[Math.floor(Math.random() * captchaChars.length)];
+        }
+        return captcha;
+      }
+      let captchaRes = captcha();
+      let input = prompt(captchaRes);
+      function validar(captchaRes, input) {
+        if (captchaRes == input) {
+                console.log("valid");
+        }else 
+        console.log("no valid");
+      }
+      validar(captchaRes, input);
+    </script>
+  </body>
+</html>
